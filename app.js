@@ -27,7 +27,6 @@ app.use(
     credentials: true, // Allow credentials (cookies, authorization headers)
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
     allowedHeaders: [
-      'Access-Control-Allow-Origin',
       'Content-Type',
       'Authorization'
     ], // Allowed headers
