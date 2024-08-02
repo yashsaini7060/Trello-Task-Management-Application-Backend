@@ -40,6 +40,10 @@ app.get('/ping', (_req, res) => {
   res.send('Pong');
 });
 
+app.get('/frontendurl', (_req, res) => {
+  res.send(process.env.FRONTEND_URL);
+});
+
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/tasks', taskRoutes);
 
