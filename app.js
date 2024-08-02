@@ -23,19 +23,11 @@ app.use(express.urlencoded({ extended: true }));
 // Third-Party
 app.use(
   cors({
-    origin: 'http://localhost:5173', // The URL of your frontend
-    credentials: true, // Allow credentials (cookies, authorization headers)
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-    allowedHeaders: [
-      'Access-Control-Allow-Origin',
-      'X-Requested-With',
-      'X-HTTP-Method-Override',
-      'Content-Type',
-      'Authorization'
-    ], // Allowed headers
-    optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+    origin: '*',
+    credentials: true,
   })
 );
+
 
 app.use(morgan('dev'));
 app.use(cookieParser());
