@@ -25,9 +25,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://trello-style-task-management-application-five.vercel.app/",
-      "https://trello-style-task-management-git-22dfa3-yashsaini7060s-projects.vercel.app/",
-      "https://trello-style-task-management-application-jwrd14pyo.vercel.app/"],
+      "https://trello-style-task-management-application-five.vercel.app",
+      "https://trello-style-task-management-git-22dfa3-yashsaini7060s-projects.vercel.app",
+      "https://trello-style-task-management-application-jwrd14pyo.vercel.app"],
     credentials: true,
   })
 );
