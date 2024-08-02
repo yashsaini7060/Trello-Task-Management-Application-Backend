@@ -23,11 +23,12 @@ app.use(express.urlencoded({ extended: true }));
 // Third-Party
 app.use(
   cors({
-    origin: '*',
+    origin: [
+      "http://localhost:5173",
+       process.env.FRONTEND_URL],
     credentials: true,
   })
 );
-
 
 app.use(morgan('dev'));
 app.use(cookieParser());
